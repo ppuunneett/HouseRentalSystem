@@ -5,56 +5,68 @@
 <title>House Rental</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2027 Melody
-http://www.tooplate.com/view/2027-melody
--->
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" /> 
+
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 
 
-<script type="text/javascript">
-$(document).ready(function () 
-{
-	$.localScroll();
-	$('#map a').lightBox();
-});
-</script>
+
+
 
 </head>
-<body>
+<body > 
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	<div id="top"></div>
-		
-        <div id="tooplate_menu">
-            <ul>
+<div id="container">
+
+ <div class="col-md-12">
+  <header id="header">
+   <div class="navbar">
+    <div class="navigation-row">
+     <nav id="navigation">
+	   <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+        <div class="nav-box navbar-collapse">
+            <ul class="navigation-menu nav navbar-nav navbars" id="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="owner.jsp">Owner</a></li>
-                <li><a href="client.jsp">Client</a></li>
+                <li><a href="client.jsp">Admin</a></li>
                 <li><a href="customer.jsp">Customer</a></li>
                 <li><a href="aboutus.jsp">About Us</a></li>
             </ul>    	
-        </div> <!-- end of tooplate_menu -->
-		
-        <div id="site_title">
-            <br>
-      <font> size="7" color="black">Online House Rental Management</font>
-             </div>
-	</div>
-        <div id="home"></div>
-        <div class="content_box">
-            <h2>Welcome to Our Website</h2>
-            <p><font size="4">House rental portal is a webpage where house owners,clients,customers can exchange information effectively and inexpensively.
-</p>
+        </div> <!-- end of menu -->
+       </nav>
+      </div>
+     </div>
+    </header>
+    
+	 <div class="text-center tm-site-title-wrap">
+          <h1 class="tm-site-title">House Rental System</h1>    
+     </div> 
+     <br/> 
+    </div>
+    <div class="row">
+       <div class="col-md-6">
+       <img src="we.jpg?w=100&h=100" width="700" height="500" alt="Image" class="img-fluid tm-intro-img" />
+       </div>
+       <div class="col-md-6" >
+       <div class="tm-intro-text-container">    
+       <h2 class="tm-text-primary mb-4 tm-section-title">About Us...</h2>
+            <p><font size="4">With House Rental System you can search multi-family homes, townhouses, resort properties and residential homes for rent. This system contains information of both renter and house owner, which will help both of them to communicate. </p>
             <p>Employs a new strategy that facilitates easy management of rental houses.</p>
             <p>Provides user friendly interface,satisfying the needs of the consumers.</p>
+            <h2>Developers:</h2>
+            <p>Puneet<br />
+            Akshay<br />
+            Puru<br />
+            Kannu<br /></p>
         </div>
         </div>
+     </div>
+ </div>
 </body>
 </html>

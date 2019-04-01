@@ -5,25 +5,17 @@
 <title>House Rental</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2027 Melody
-http://www.tooplate.com/view/2027-melody
--->
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" /> 
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 
 
-<script type="text/javascript">
-$(document).ready(function () 
-{
-	$.localScroll();
-	$('#map a').lightBox();
-});
-</script>
 
 </head>
      <%
@@ -39,14 +31,21 @@ if(request.getParameter("m2")!=null){%>
  <%
 }
 %>
-<body>
+<body class="templatemo-bg-image-2">
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	<div id="top"></div>
-		
-        <div id="tooplate_menu">
-            <ul>
+<%
+                String username = session.getAttribute("username").toString();
+                %>
+
+<div id="container">
+ <div class="col-md-12">
+  <header id="header">
+   <div class="navbar">
+    <div class="navigation-row">
+     <nav id="navigation">
+	   <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+        <div class="nav-box navbar-collapse">
+            <ul class="navigation-menu nav navbar-nav navbars"  id="nav">
                 <li><a href="customerhome.jsp">Home</a></li>
                 <li><a href="viewprofile.jsp">View Profile</a></li>
                 <li><a href="search.jsp">Search</a></li>                
@@ -54,19 +53,21 @@ if(request.getParameter("m2")!=null){%>
                 <li></li>
                 <li></li>
             </ul>    	
-        </div> <!-- end of tooplate_menu -->
-		<%
-                String username = session.getAttribute("username").toString();
-                %>
-        <div id="site_title">
-           <br>
-            <font  size="7" color="black">Online House Rental Management</font>
-             </div>
-	</div>
-        <div id="home"></div>
-        <div class="content_box">
-            <h2>Welcome <%=username%></h2>
-            <img src="Gallery/h3.jpg" width="800" height="250" alt="Image 01" /></div>
+        </div> <!-- end of menu -->
+       </nav>
+      </div>
+     </div>
+    </header>
+    
+	 <div class="text-center tm-site-title-wrap">
+          <h1 class="tm-site-title">House Rental System</h1>    
+     </div><br/><br />
+            <h2><b>Welcome <%=username%></b></h2>
+            <br/><br />
+            <center>
+            <img src="images/welcome.png"  width="800" height="250" alt="Image 01" />
+            </center>
+            </div>
         </div>
 </body>
 </html>

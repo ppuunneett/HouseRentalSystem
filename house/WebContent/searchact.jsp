@@ -5,48 +5,48 @@
 <title>House Rental</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2027 Melody
-http://www.tooplate.com/view/2027-melody
--->
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" /> 
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css"> 
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 
 
-<script type="text/javascript">
-$(document).ready(function () 
-{
-	$.localScroll();
-	$('#map a').lightBox();
-});
-</script>
 
 </head>
-<body>
+<body class="templatemo-bg-image-2">
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	<div id="top"></div>
-		
-        <div id="tooplate_menu">
-            <ul>
-              <li><a href="customerhome.jsp">Home</a></li>
+<div id="container">
+ <div class="col-md-12">
+  <header id="header">
+   <div class="navbar">
+    <div class="navigation-row">
+     <nav id="navigation">
+	   <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+        <div class="nav-box navbar-collapse">
+            <ul class="navigation-menu nav navbar-nav navbars"  id="nav">
+                <li><a href="customerhome.jsp">Home</a></li>
                 <li><a href="viewprofile.jsp">View Profile</a></li>
                 <li><a href="search.jsp">Search</a></li>                
                 <li><a href="logout.jsp">Logout</a></li>
+                <li></li>
+                <li></li>
             </ul>    	
-        </div> <!-- end of tooplate_menu -->
-	<div id="site_title">
-            <br>
-            <font  size="7" color="black">Online House Rental Management</font>
-             </div>
-	</div>
-        <div id="home"></div>
-        <div class="content_box">
+        </div> <!-- end of menu -->
+       </nav>
+      </div>
+     </div>
+    </header>
+    <div class="col-md-6 col-md-push-3">
+    
+	 <div class="text-center tm-site-title-wrap">
+          <h1 class="tm-site-title">House Rental System</h1>    
+     </div><br/><br />
+     <div class="jumbotron" style=width:800px;>	
+        
             <h2>Results</h2>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import ="java.sql.*" %>
@@ -107,6 +107,8 @@ $(document).ready(function ()
         %>  
         </table>
         </center>
+        </div>
+        </div>
 </div>
 </div>
 </body>

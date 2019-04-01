@@ -15,7 +15,7 @@
             String gender=request.getParameter("gender");
             String address=request.getParameter("address");
             String image=request.getParameter("image");
-                String status="Authorized";
+                String status="waiting";
             
 		try
 		{

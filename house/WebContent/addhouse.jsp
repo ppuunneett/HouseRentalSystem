@@ -5,25 +5,17 @@
 <title>House Rental</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2027 Melody
-http://www.tooplate.com/view/2027-melody
--->
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" /> 
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 
 
-<script type="text/javascript">
-$(document).ready(function () 
-{
-	$.localScroll();
-	$('#map a').lightBox();
-});
-</script>
+
 
 </head>
      <%
@@ -39,43 +31,51 @@ if(request.getParameter("m2")!=null){%>
  <%
 }
 %>
-<body>
+<body class="templatemo-bg-image-2">
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	<div id="top"></div>
-		
-        <div id="tooplate_menu">
-            <ul>
-               <li><a href="ownerhome.jsp">Home</a></li>
-                 <li><a href="viewprofile2.jsp">View Profile</a></li>
-                <li><a href="addhouse.jsp">Add House</a></li>
-                <li><a href="viewhouse.jsp">View House</a></li>                
-                <li><a href="logout.jsp">Logout</a></li>
+<div id="container">
+ <div class="col-md-12">
+  <header id="header">
+   <div class="navbar">
+    <div class="navigation-row">
+     <nav id="navigation">
+	   <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+        <div class="nav-box navbar-collapse">
+            <ul class="navigation-menu nav navbar-nav navbars"  id="nav">
+                <li><a href="ownerh	ome.jsp">Home</a></li>
+ 				<li><a href="viewprofile2.jsp">View Profile</a></li>
+				<li><a href="addhouse.jsp">Add House</a></li>
+				<li><a href="viewhouse.jsp">View House</a></li>                
+				<li><a href="logout.jsp">Logout</a></li>
             </ul>    	
-        </div> <!-- end of tooplate_menu -->
-		
-        <div id="site_title">
-            <br>
-            <font  size="7" color="black">Online House Rental Management</font>
-             </div>
-	</div>
-        <div id="home"></div>
-        <div class="content_box">
-            <h2>Add House</h2>
+        </div> <!-- end of menu -->
+       </nav>
+      </div>
+     </div>
+    </header>
+    
+	 <div class="text-center tm-site-title-wrap">
+          <h1 class="tm-site-title">House Rental System</h1>    
+     </div> 
             
-            <form action="addhouseact.jsp" method="post" ><center>
+            
+            <form class="form-horizontal templatemo-contact-form-1" action="addhouseact.jsp" method="post" ><center>
+            <div class="form-group">
+		  		<div class="col-md-12">
+		  		<h1 class="margin-bottom-15">Add House</h1>
+		  		</div>
+		  	</div>
 					  <table width="567">
                                             
                         <tr>
                           <td width="238" height="43">Location</td>
                           <td width="317">
-                              <input id="Location" name="location" required class="text" placeholder="Location" /></td>
+                              <input id="Location" name="location" required class="form-control" placeholder="Location" /></td>
                         </tr>
                         
                         <tr>
                           <td height="43">Category</td>
-                          <td><select id="gender" name="category" required style="width:170px;" class="text">
+                          <td><select id="gender" name="category" required style="width:175px;height:50px;"" class="form-control">
                                   <option value="">--Select--</option>
                                   <option value="Individual">Individual</option>
                                   <option value="">Apartment</option>
@@ -84,31 +84,31 @@ if(request.getParameter("m2")!=null){%>
                         <tr>
                           <td height="43">Bedrooms</td>
                           <td>
-                          <input id="Bedrooms" name="bedroom" required class="text" placeholder="Bedrooms"/></td>
+                          <input id="Bedrooms" name="bedroom" required class="form-control" placeholder="Bedrooms"/></td>
                         </tr>
                         <tr>
                           <td height="43">Name</td>
                           <td>
-                              <input type="text"  name="name" required class="text" placeholder="Name"/></td>
+                              <input type="text"  name="name" required class="form-control" placeholder="Name"/></td>
                         </tr>
                         
                         <tr>
                           <td height="65">Address</td>
                           <td>
-                              <input id="address" name="address" required placeholder="Email"> 
+                              <input id="address" class= "form-control" name="address" required placeholder="address"> 
                               </input></td>
                         </tr>
                                                <tr>
                           <td height="65">Mobile</td>
                           <td>
-                              <input type="text" name="mobile" required placeholder="Mobile"> 
+                              <input type="text" class="form-control" name="mobile" required placeholder="Mobile"> 
                               </input></td>
                         </tr>
                                               
                                               <tr>
                           <td height="65">Image</td>
                           <td>
-                              <input type="file" name="image" required>  
+                              <input type="file" class= "form-control" name="image" required>  
                               </input></td>
                         </tr>
                                               
@@ -118,7 +118,7 @@ if(request.getParameter("m2")!=null){%>
                           <td align="left" valign="middle"> <p>&nbsp;
                             </p>
                             <p>
-                              <input name="submit" type="submit" value="Add" />
+                              <input name="submit" class="btn btn-success pull-right" type="submit" value="Add" />
                             </p>
                             <div align="right">
                            

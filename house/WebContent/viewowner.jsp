@@ -5,17 +5,12 @@
 <title>House Rental</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!--
-Template 2027 Melody
-http://www.tooplate.com/view/2027-melody
--->
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" /> 
 
-<script type='text/javascript' src='js/jquery.min.js'></script>
-<script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script> 
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
 $(document).ready(function () 
@@ -39,28 +34,34 @@ if(request.getParameter("m2")!=null){%>
  <%
 }
 %>
-<body>
+<body  class="templatemo-bg-image-2">
 
-<div id="tooplate_wrapper">
-	<div id="tooplate_header">
-    	<div id="top"></div>
-		
-        <div id="tooplate_menu">
-            <ul>
+<div id="container">
+ <div class="col-md-12">
+  <header id="header">
+   <div class="navbar">
+    <div class="navigation-row">
+     <nav id="navigation">
+	   <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+        <div class="nav-box navbar-collapse">
+            <ul class="navigation-menu nav navbar-nav navbars">
                 <li><a href="clienthome.jsp">Home</a></li>
                 <li><a href="viewowner.jsp">View Owner</a></li>
                 <li><a href="viewcustomer.jsp">View Customer</a></li>                
                 <li><a href="logout.jsp">Logout</a></li>
+            </ul>    
             </ul>    	
-        </div> <!-- end of tooplate_menu -->
-		
-        <div id="site_title">
-          <br>
-            <font  size="7" color="black">Online House Rental Management</font>
-             </div>
-	</div>
-        <div id="home"></div>
-        <div class="content_box">
+        </div> <!-- end of menu -->
+       </nav>
+      </div>
+     </div>
+    </header>
+    
+	 <div class="text-center tm-site-title-wrap">
+          <h1 class="tm-site-title">House Rental System</h1>    
+     </div> 	
+		<div class="col-md-6 col-md-push-3">
+    	<div class="jumbotron" style=width:800px;>	
             <h2>View & Activate</h2>
            <table width="564" border="1" align="center"  cellpadding="0" cellspacing="0"  ">
           <tr>
@@ -169,6 +170,9 @@ if(request.getParameter("m2")!=null){%>
             <td  valign="baseline" height="0">&nbsp;</td>
 </tr>--%>
         </table>
+        </div>
+        </div>
+        </div>
         </div>
 </body>
 </html>
